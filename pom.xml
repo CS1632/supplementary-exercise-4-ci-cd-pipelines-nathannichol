@@ -2,14 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>io.github.nathannichol</groupId>
-  <artifactId>cs1632-cicd-junit</artifactId>
+  <groupId>io.github.wonsunahn</groupId>
+  <artifactId>cs1632-cicd-junit-mat271</artifactId>
   <version>1.0</version>
   <packaging>jar</packaging>
 
   <name>cs1632-cicd-junit</name>
   <description>An exercise demonstrating CI/CD through github actions.  It uses JUnit for unit testing.</description>
-  <url>https://github.com/wonsunahn/CS1632_Fall2022/tree/main/exercises/Supplement4</url>
+  <url>https://github.com/wonsunahn/CS1632_CICD_JUnit</url>
 
   <licenses>
     <license>
@@ -20,22 +20,26 @@
 
   <developers>
     <developer>
-      <name>Nathan Nichol</name>
-      <email>njn12@pitt.edu</email>
+      <name>Wonsun Ahn</name>
+      <email>wahn@pitt.edu</email>
       <organization>University of Pittsburgh</organization>
       <organizationUrl>https://www.pitt.edu/</organizationUrl>
     </developer>
   </developers>
 
   <scm>
-    <distributionManagement>
+    <connection>scm:git:git://github.com/wonsunahn/CS1632_CICD_JUnit.git</connection>
+    <developerConnection>scm:git:ssh://github.com:wonsunahn/CS1632_CICD_JUnit.git</developerConnection>
+    <url>http://github.com/wonsunahn/CS1632_CICD_JUnit/tree/master</url>
+   </scm>
+  
+  <distributionManagement>
     <repository>
       <id>github</id>
       <name>GitHub Apache Maven Packages</name>
-      <url>https://maven.pkg.github.com/CS1632/supplementary-exercise-4-ci-cd-pipelines-nathannichol</url>
+      <url>https://maven.pkg.github.com/CS1632/supplementary-exercise-4-ci-cd-pipelines-wonsunahn</url>
     </repository>
   </distributionManagement>
-   </scm>
 
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
@@ -57,7 +61,7 @@
 
     <dependency>
       <groupId>junit</groupId>
-      <artifactId>junit-njn12</artifactId>
+      <artifactId>junit</artifactId>
       <version>4.13.2</version>
       <scope>test</scope>
     </dependency>
